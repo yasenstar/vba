@@ -14,7 +14,7 @@ Note that in VBA and Visual Basic 6.0, if you do not specify `ByVal` or `ByRef` 
 
 It is a good coding practice for VBA and VB6 to include either the `ByVal` or `ByRef` keyword for each function argument (also called parameter).
 
-My following sample is pop up folder picker dialog, let user to choose the destination folder, and return the folder path:
+Sample 1: My following sample is pop up folder picker dialog, let user to choose the destination folder, and return the folder path:
 
 ```vb
 Function browseFolderPath(ByRef folderPath as String) As String
@@ -47,7 +47,45 @@ Note: to utilize the function, you need to declare one global variable, like bel
 
 Then you can use `Call browseFolderPath(Print_Path)` in any Sub of the Excel coding.
 
+Sample 2 (Online): The function below can modify its argument which is a reference pointer and it may hold a different value after the function is called. The reference pointer is defined by the `ByRef` keyword which is the default passing mechanism of VBA.
 
+```vbscript
+' Argument strWeekdayName can be changed inside the function.
+Public Function IsToday(ByRef strWeekdayName As String) As Boolean
+    ` If the weekday passed in is equal to today's weekday name, return True.
+    	If strWeekdayName = WeekdayName(Weekday(Date)) Then
+        	' Explicit return value
+        	IsToday = Ture
+    	Else
+            ' If it does not equal to today's weekday name, return today's weekday name by assigning
+            ' today's weekday name to the argument.
+            strWeekdayName = WeekdayName(Weekday(Date))
+            
+            ' Explicit return value
+            IsToday = False
+        End If
+End Function        
+```
+
+To test the function, we display the return values in Immediate Window by using `Debug.Print`.
+
+In this subroutine, the function is called and returns a Boolean value as well as today's weekday name. Note that its argument strDayName is called again after the function. blnIsToday is the return value of the function, and strDayName is today's weekday name.
+
+```vbscript
+Private Sub cmbGetByRef_Click()
+    Dim blnIsToday As Boolean
+    Dim strDayName As String
+    
+    strDayName = "Monday"
+    
+    blnIsToday = IsToday(strDayName)
+    
+    Debug.Print blnIsToday
+    Debug.Print strDayName
+End Sub
+```
+
+===Rest for now, more will be coming...===
 
 ------
 
