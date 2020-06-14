@@ -1,4 +1,4 @@
-# VBA - Return Values from Function
+# VBA - Return Values from Function - Method 1
 
 [TOC]
 
@@ -84,8 +84,6 @@ Private Sub cmbGetByRef_Click()
     Debug.Print strDayName
 End Sub
 ```
-
-===Rest for now, more will be coming...===
 
 ------
 
