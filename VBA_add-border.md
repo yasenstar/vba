@@ -30,7 +30,7 @@ Sub add_border()
 End Sub
 ```
 
-From here [Borders Properties]([https://docs.microsoft.com/en-us/office/vba/api/excel.borders](https://docs.microsoft.com/en-us/office/vba/api/excel.borders))
+From here <[https://docs.microsoft.com/en-us/office/vba/api/excel.borders](https://docs.microsoft.com/en-us/office/vba/api/excel.borders)>
 
 Following are the properties for Borders:
 
