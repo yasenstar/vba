@@ -12,7 +12,7 @@
 
 ## 使用方法
 
-1. 建立一个工作目录，将本工具（filename_maching.xlsm)放到这个目录下
+1. 建立一个工作目录，将本工具（[filename_matching.xlsm](.\filename_matching.xlsm)）放到这个目录下
 2. 在工作目录中创建三个子目录：source存放全部原始照片文件；sourcejpg存放选择好的jpg文件；targetraw初始为空，运行工具后会存放复制过来的匹配好的raw文件
 3. 假定文件名的后缀为：raw, jpg
 4. 需要在Excel中确认激活“宏”，允许运行
