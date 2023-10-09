@@ -1,6 +1,6 @@
 <map version="freeplane 1.11.5">
 <!--To view this file, download free mind mapping software Freeplane from https://www.freeplane.org -->
-<node TEXT="Office VBA Development" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" FOLDED="false" ID="ID_1090958577" CREATED="1409300609620" MODIFIED="1696773647593"><hook NAME="MapStyle" background="#f5f5dc">
+<node TEXT="Office VBA Development" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" FOLDED="false" ID="ID_1090958577" CREATED="1409300609620" MODIFIED="1696775014810"><hook NAME="MapStyle" background="#f5f5dc" zoom="0.77">
     <properties show_icon_for_attributes="true" edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" show_note_icons="true" fit_to_viewport="false" associatedTemplateLocation="template:/light_sepia_template.mm"/>
 
 <map_styles>
@@ -92,6 +92,9 @@
     <p>
       出版时间：2019年6月
     </p>
+    <p>
+      在本书的编写过程中，除了刘永富、刘行外，参与编写的人员还有戴海东、曹文丽、李白等
+    </p>
   </body>
 </html>
 </richcontent>
@@ -107,6 +110,36 @@
   </body>
 </html>
 </richcontent>
+<node TEXT="New File System Object after VB6.0: FileSystemObject (FSO)" ID="ID_1417069274" CREATED="1696775034451" MODIFIED="1696775055489"/>
+<node TEXT="Three Methods for handling file and path" ID="ID_247153394" CREATED="1696775068657" MODIFIED="1696775088029">
+<node TEXT="Traditional approach" ID="ID_1744499541" CREATED="1696775088033" MODIFIED="1696775098667">
+<node TEXT="Dir: 用于列举路径下的文件和子文件夹名称" ID="ID_531730316" CREATED="1696775220125" MODIFIED="1696775236642"/>
+<node TEXT="GetAttr and SetAttr: 获取和设置属性" ID="ID_1759475378" CREATED="1696775237919" MODIFIED="1696775257127">
+<node TEXT="GetAttr" ID="ID_41580467" CREATED="1696775370226" MODIFIED="1696775375634">
+<node TEXT="vbNormal: 0" ID="ID_1581206142" CREATED="1696775375637" MODIFIED="1696775386752"/>
+<node TEXT="vbReadOnly: 1" ID="ID_575556645" CREATED="1696775387599" MODIFIED="1696775401575"/>
+<node TEXT="vbHidden: 2" ID="ID_1266781412" CREATED="1696775405855" MODIFIED="1696775410103"/>
+<node TEXT="vbSystem: 4" ID="ID_1110259943" CREATED="1696775410584" MODIFIED="1696775417033"/>
+<node TEXT="vbDirectory: 16" ID="ID_1301242819" CREATED="1696775417478" MODIFIED="1696775422971"/>
+<node TEXT="vbArchive: 32" ID="ID_1785403397" CREATED="1696775423440" MODIFIED="1696775428714"/>
+<node TEXT="vbalias: 64" ID="ID_397817037" CREATED="1696775429112" MODIFIED="1696775434896"/>
+</node>
+</node>
+<node TEXT="FileCopy, Name, MkDir, etc: 对文件和路径复制、移动等" ID="ID_395741718" CREATED="1696775260145" MODIFIED="1696775283112"/>
+<node TEXT="Open..Write..Close: 对文本文件、二进制文件进行打开、读写、关闭" ID="ID_539046855" CREATED="1696775283919" MODIFIED="1696775301208"/>
+</node>
+<node TEXT="Using FSO" ID="ID_1054115415" CREATED="1696775098864" MODIFIED="1696775105292"/>
+<node TEXT="Using Shell statement call DOS command" ID="ID_480281023" CREATED="1696775105473" MODIFIED="1696775128321"/>
+</node>
+<node TEXT="Utilized External Reference &amp; Objects" ID="ID_613905231" CREATED="1696775139087" MODIFIED="1696775150137">
+<node TEXT="Microsoft Scripting Runtime" ID="ID_1379814793" CREATED="1696775150142" MODIFIED="1696775156714"/>
+<node TEXT="Scripting.FileSystemObject" ID="ID_1824045563" CREATED="1696775156861" MODIFIED="1696775163211"/>
+<node TEXT="Scripting.TextStream" ID="ID_570538099" CREATED="1696775163368" MODIFIED="1696775167329"/>
+<node TEXT="Microsoft ActiveX Data Objects 2.8 Library" ID="ID_1424510438" CREATED="1696775167558" MODIFIED="1696775181835"/>
+<node TEXT="ADODB.Stream" ID="ID_1629906902" CREATED="1696775182001" MODIFIED="1696775187256"/>
+<node TEXT="Microsoft XML, v6.0" ID="ID_1672989133" CREATED="1696775187429" MODIFIED="1696775192136"/>
+<node TEXT="MSXML2.xMLHTTP60" ID="ID_1671923064" CREATED="1696775192293" MODIFIED="1696775200346"/>
+</node>
 </node>
 <node TEXT="02 Add/Delete Files, Path&#xa;文件、路径的增删" POSITION="bottom_or_right" ID="ID_1319735816" CREATED="1696773155283" MODIFIED="1696773692717"><richcontent TYPE="NOTE">
 <html>
@@ -259,6 +292,19 @@
   <body>
     <p>
       介绍HTML DOM读写网页，WebBrowser和Internet Explorer实现网页自动化，以及XMLHTTP和WinHttp实现HTTP请求
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node TEXT="14 More: Random Number, Color, Base-Converting, Date and Time" POSITION="bottom_or_right" ID="ID_1907991611" CREATED="1696774941048" MODIFIED="1696774982891"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      介绍VBA编程中遇到的其他常见话题：随机数、颜色和进制转换、日期时间方面的计算
     </p>
   </body>
 </html>
